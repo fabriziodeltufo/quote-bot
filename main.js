@@ -3,7 +3,6 @@
 --------------------------------------------------------------------------------------------------- */
 const API_URL = "https://api.openai.com/v1/chat/completions";
 const MODEL = "gpt-3.5-turbo";
-const API_KEY = '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';
 
 
 /*  -----------------------------------------------------------------------------------------------
