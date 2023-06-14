@@ -1,0 +1,13 @@
+{
+    "short_name": "QuoteBOT",
+    "name": "Quote a BOT",
+    "icons": [
+        {
+            "src": "./images/icon-192x192.png",
+            "type": "image/webp",
+            "sizes": "192x192"
+        }
+    ],
+    "theme_color": "#1212b2",
+    "display": "fullscreen"
+}

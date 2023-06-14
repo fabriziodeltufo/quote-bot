@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quote-bot</title>
+    <!-- Startup configuration -->
+    <link rel="manifest" href="./site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Quote from GPT bot</h1>
+        <p>Select a character and see what<br>they have to say to you.</p>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="characters">
+
+                <div class="character" data-description="Ash Ketchum">
+                    <img src="./images/ash-ketchum.png" alt="Homer Simpson">
+                </div>
+
+                <div class="character" data-description="Barbie">
+                    <img src="./images/barbie.png" alt="Barbie">
+                </div>
+
+                <div class="character" data-description="Batman">
+                    <img src="./images/batman.png" alt="Batman">
+                </div>
+
+                <div class="character" data-description="Gandalf">
+                    <img src="./images/gandalf.png" alt="Gandalf">
+                </div>
+
+                <div class="character" data-description="Harley Quinn">
+                    <img src="./images/harley-quinn.png" alt="Harley Quinn">
+                </div>
+
+                <div class="character" data-description="Hermione Granger">
+                    <img src="./images/hermione-granger.png" alt="Hermione Granger">
+                </div>
+
+                <div class="character" data-description="Homer Simpson">
+                    <img src="./images/homer-simpson.png" alt="Homer Simpson">
+                </div>
+
+                <div class="character" data-description="Minion">
+                    <img src="./images/minion.png" alt="Minion">
+                </div>
+
+                <div class="character" data-description="Shrek">
+                    <img src="./images/shrek.png" alt="Sherek">
+                </div>
+
+
+                <!-- fake loader -->
+                <div class="loading loading-hidden">
+                    <img src="./images/loader.gif" alt="Loader">
+                </div>
+                <!-- fake loader -->
+
+
+                <!-- modal -->
+                <div class="modal modal-hidden">
+                    <div class="modal-wrapper">
+                        <div class="modal-box">
+                            <div class="modal-close">
+                                <img src="./images/close.svg" alt="closing">
+                            </div>
+                            <div class="modal-content">
+
+                                <!-- // temp placeholder in caricamento pagina -->
+                                <div class="character" data-description="Batman">
+                                    <img src="./images/batman.png" alt="Batman">
+                                </div>
+
+                                <h2>Batman</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro doloribus ab fugiat
+                                    illum
+                                    laudantium assumenda. Nesciunt magni sequi asperiores quam repellendus deleniti quod
+                                    deserunt expedita vitae consequatur distinctio, atque placeat.</p>
+                                <code>LOG: character: sfdsfsf | Action: sdsfsfsfs | Temperature: 0.7
+                                </code>
+                            </div>
+                        </div>
+                        <div class="modal-actions">
+                            <button id="save">
+                                <img src="images/save.png" alt="Salva Immagine">
+                                Salva
+                            </button>
+                            <button id="share">
+                                <img src="images/share.png" alt="Condividi">
+                                Condividi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal -->
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- create a screenshots of modal  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

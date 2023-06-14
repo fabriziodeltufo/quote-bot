@@ -1,0 +1,163 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #6885e0;
+    color: #1212b2;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+header {
+    background-color: #e9f45b;
+    text-align: center;
+    padding: 32px;
+}
+
+button{
+    padding:12px;
+    background-color: #e9f45b;
+    border:1px solid #1212b2;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button img{
+    height: 15px;
+}
+
+button:first-child img{
+    height:18px;
+    margin-bottom: -1px;
+}
+
+.container{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.character {
+    display: inline-block;
+    height: 112px;
+    width: 112px;
+    background-color: #a1d2ff;
+    border-radius: 100%;
+    border: 2px solid #1212b2;
+    overflow: hidden;
+}
+
+
+.character img {
+    max-width: 100%;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 40px 4px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading img {
+    max-width: 100px;
+}
+
+.loading-hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 9999;
+    padding: 20px;
+
+}
+
+.modal-wrapper{
+    max-width: 520px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.modal-box {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #1212b2;
+    max-width: 512px;
+    margin: 24px auto;
+    position: relative;
+}
+
+.modal-content{
+    padding: 16px;
+}
+
+.modal-actions{
+    display: flex;
+    gap:12px;
+}
+
+.modal-actions > *{
+    /* width: 100%; */
+    flex-basis: 50%;
+}
+
+.modal-close {
+    background-color: lightpink;
+    width: 35px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #1212b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+
+
+.modal-hidden{
+    display: none;
+}
+
