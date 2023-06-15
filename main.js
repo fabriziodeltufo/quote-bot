@@ -3,7 +3,8 @@
 --------------------------------------------------------------------------------------------------- */
 const API_URL = "https://api.openai.com/v1/chat/completions";
 const MODEL = "gpt-3.5-turbo";
-// const API_KEY = '';
+const API_KEY = '';
+
 
 
 /*  -----------------------------------------------------------------------------------------------
@@ -158,7 +159,11 @@ function fallbackShare() {
 // PLAY GAME - QUOTE BY BOT
 character.forEach(function (element) {
     element.addEventListener('click', function () {
-        playCharacter(element.dataset.description);
+        if (API_KEY != '') {
+            playCharacter(element.dataset.description);
+        } else{
+            alert('API KEY NOT DEFINED: YOU MUST REGISTER AN API KEY TO USE THIS WEB APP');
+        }
     })
 })
 
