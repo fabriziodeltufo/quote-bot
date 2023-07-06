@@ -3,8 +3,6 @@
 --------------------------------------------------------------------------------------------------- */
 const API_URL = "https://api.openai.com/v1/chat/completions";
 const MODEL = "gpt-3.5-turbo";
-const API_KEY = '';
-
 
 
 /*  -----------------------------------------------------------------------------------------------
@@ -17,8 +15,6 @@ const modalContent = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 const saveBtn = document.querySelector('#save');
 const shareBtn = document.querySelector('#share');
-
-
 
 
 /*  -----------------------------------------------------------------------------------------------
