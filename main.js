@@ -155,10 +155,11 @@ function fallbackShare() {
 // PLAY GAME - QUOTE BY BOT
 character.forEach(function (element) {
     element.addEventListener('click', function () {
+
         if (API_KEY != '') {
             playCharacter(element.dataset.description);
-        } else{
-            alert('API KEY NOT DEFINED: YOU MUST REGISTER AN API KEY TO USE THIS WEB APP');
+        } else {
+            alert('API_KEY VARIABLE NOT DEFINED: \nYOU MUST REGISTER AN API KEY TO USE THIS WEB APP AND \nINSERT IT INTO A FILE NAMED config.js\n ie: const API_KEY = "value"; ');
         }
     })
 })
